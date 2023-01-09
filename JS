@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(65, 65, 65);
+    background-color: rgb(87, 87, 87);
+    font-size: 20px;
+}
+
+
+.wrapper{
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    height: 360px;
+    padding: 20px 40px;
+    font-family: 'Moon Dance', cursive;
+    background-image: url('../img/happy-birthday-g1e974570c_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.35);
+    z-index: -1;
+}
+
+h1{
+    color: #fff;
+    padding: 20px 0;
+    font-size: 50px;
+}
+
+.search{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+.drink-list{
+    padding: 20px 40px;
+}
+ul{
+    list-style: none;
+}
+.drink-list h2{
+    padding: 10px 0;
+}
+.drink-list li{
+    padding: 4px 0;
+    border-bottom: 1px solid rgb(226,226,226);
+}
+.drink-list li:last-child{
+    border-bottom: 0;
+}
+
+.add-item{
+    position: absolute;
+    top: 40px;
+}
+.add-item h2{
+    color: #fff;
+    font-size: 30px;
+}
+.addStuff{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.add-btn{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.add-btn:hover{
+    background-color: rgb(250, 167, 0);
+}
